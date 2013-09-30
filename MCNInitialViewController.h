@@ -13,6 +13,7 @@
 @interface MCNInitialViewController : ECSlidingViewController <MCNLeftMenuViewControllerDelegate>
 
 @property (retain) NSMutableArray *viewControllerStacks;
+@property (retain) NSDictionary *currentItem;
 @property int selectedVCIndex;
 @property bool isFirstOpen;
 

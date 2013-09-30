@@ -40,6 +40,10 @@
     self.topTableView.dataSource = self;
     self.bottomTableView.delegate = self;
     self.bottomTableView.dataSource = self;
+    
+    if([[[UIDevice currentDevice] systemVersion] integerValue] >= 7) {
+        self.topTableTopPosition.constant = 22;
+    }
 }
 
 - (void)setupWithTopTableItems:(NSArray *)topItems bottomTableItems:(NSArray *)bottomItems {
@@ -176,7 +180,7 @@
                 else {
                     cell.textLabel.enabled = YES;
                 }
-                if([self.delegate canSelectMenuOptionAtIndex:[index intValue]]) {
+                if([self.delegate canSelectMenuOption:thisItem atIndex:[index intValue]]) {
                     cell.userInteractionEnabled = YES;
                 }
                 else {
@@ -207,7 +211,7 @@
                 else {
                     cell.textLabel.enabled = YES;
                 }
-                if([self.delegate canSelectMenuOptionAtIndex:[index intValue]]) {
+                if([self.delegate canSelectMenuOption:thisItem atIndex:[index intValue]]) {
                     cell.userInteractionEnabled = YES;
                 }
                 else {
@@ -255,7 +259,7 @@
     int vcIndex = -1;
     bool isBottomTable = NO;
     NSDictionary *thisItem;
-    if([tableView isEqual:self.topTableView]) {        
+    if([tableView isEqual:self.topTableView]) {
         if(indexPath.section < self.topTableItems.count) {
             NSArray *thisSectionItems = [self.topTableItems objectAtIndex:indexPath.section][@"Items"];
             if(indexPath.row < thisSectionItems.count) {

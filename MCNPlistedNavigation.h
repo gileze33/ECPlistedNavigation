@@ -12,6 +12,9 @@
 #ifndef IS_IOS_7
 #define IS_IOS_7 ([[[UIDevice currentDevice] systemVersion] integerValue] >= 7)
 #endif
+#ifndef IS_TABLET
+#define IS_TABLET (((UI_USER_INTERFACE_IDIOM()) != (UIUserInterfaceIdiomPhone)))
+#endif
 #ifndef FormatStoryboardString
 #define FormatStoryboardString(StoryboardString) [NSString stringWithFormat:@"%@_%@", StoryboardString, ((UI_USER_INTERFACE_IDIOM()) == (UIUserInterfaceIdiomPhone) ? (@"iPhone") : (@"iPad"))]
 #endif

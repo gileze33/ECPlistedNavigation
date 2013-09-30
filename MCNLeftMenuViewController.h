@@ -14,7 +14,7 @@
 @required
 - (void)didSelectMenuOption:(NSDictionary *)item atIndex:(int)index;
 - (bool)disableMenuOption:(NSDictionary *)item atIndex:(int)index;
-- (bool)canSelectMenuOptionAtIndex:(int)index;
+- (bool)canSelectMenuOption:(NSDictionary *)item atIndex:(int)index;
 
 @end
 
@@ -23,6 +23,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *topTableView;
 @property (strong, nonatomic) IBOutlet UITableView *bottomTableView;
 
+@property IBOutlet NSLayoutConstraint *topTableTopPosition;
 @property IBOutlet NSLayoutConstraint *topTableViewHeight;
 @property IBOutlet NSLayoutConstraint *bottomTableViewHeight;
 
