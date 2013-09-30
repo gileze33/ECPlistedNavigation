@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Top</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Home Title</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Title</key>
+					<string>Home</string>
+					<key>NavTitle</key>
+					<string>Home</string>
+					<key>Storyboard</key>
+					<string>Search</string>
+					<key>StoryboardName</key>
+					<string></string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>My Account</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>RequiresLogin</key>
+					<true/>
+					<key>Title</key>
+					<string>Account Settings</string>
+					<key>NavTitle</key>
+					<string>Login</string>
+					<key>Storyboard</key>
+					<string>Login</string>
+					<key>StoryboardName</key>
+					<string></string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Bottom</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string></string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>PresentModally</key>
+					<true/>
+					<key>Title</key>
+					<string></string>
+					<key>NavTitle</key>
+					<string>Login / Signup</string>
+					<key>Storyboard</key>
+					<string>Login</string>
+					<key>StoryboardName</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>Title</key>
+					<string>My Settings</string>
+					<key>NavTitle</key>
+					<string>Settings</string>
+					<key>Storyboard</key>
+					<string>Settings</string>
+					<key>StoryboardName</key>
+					<string></string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
