@@ -7,6 +7,7 @@
 //
 
 #import "ECSlidingViewController.h"
+#import "MCNPlistedNavigation.h"
 #import "MCNLeftMenuViewController.h"
 
 @interface MCNInitialViewController : ECSlidingViewController <MCNLeftMenuViewControllerDelegate>

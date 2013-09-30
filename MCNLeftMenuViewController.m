@@ -255,13 +255,7 @@
     int vcIndex = -1;
     bool isBottomTable = NO;
     NSDictionary *thisItem;
-    if([tableView isEqual:self.topTableView]) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MCNLeftNavTopCell"];
-        
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MCNLeftNavTopCell"];
-        }
-        
+    if([tableView isEqual:self.topTableView]) {        
         if(indexPath.section < self.topTableItems.count) {
             NSArray *thisSectionItems = [self.topTableItems objectAtIndex:indexPath.section][@"Items"];
             if(indexPath.row < thisSectionItems.count) {

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCNPlistedNavigation.h"
 
 @interface MCNModalNavController : UINavigationController
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCNPlistedNavigation.h"
 
 @protocol MCNLeftMenuViewControllerDelegate <NSObject>
 

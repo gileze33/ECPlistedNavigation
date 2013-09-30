@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCNPlistedNavigation.h"
 #import "MCNLeftMenuViewController.h"
 #import "MCNInitialViewController.h"
 
